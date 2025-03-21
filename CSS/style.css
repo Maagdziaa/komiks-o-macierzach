@@ -1,0 +1,62 @@
+* {
+    padding: 10px; /* Wewnętrzny odstęp */
+    box-sizing: border-box; /* Uwzględnia padding w szerokości elementu */
+}
+
+p {
+    font-size: 2rem; /* Jednostka względna (1rem = 16px) */
+    text-align: center;
+    font-family: math;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%; /* Obrazy nie przekraczają szerokości kontenera */
+    height: auto; /* Zachowuje proporcje */
+}
+
+.button-container {
+    text-align: center;
+    align-items: center;
+}
+
+.start-button {
+    padding: 1rem 2rem; /* Jednostki względne */
+    font-size: 1.5rem; /* Jednostki względne */
+    font-weight: bold;
+    color: white;
+    background-color: #8FBC8F;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.start-button:hover {
+    background: #90EE90;
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+    p {
+        font-size: 1.5rem; /* Mniejsza czcionka na tabletach */
+    }
+
+    .start-button {
+        padding: 0.8rem 1.6rem; /* Mniejszy padding na tabletach */
+        font-size: 1.2rem; /* Mniejsza czcionka na tabletach */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 1.2rem; /* Jeszcze mniejsza czcionka na smartfonach */
+    }
+
+    .start-button {
+        padding: 0.5rem 1rem; /* Mniejszy padding na smartfonach */
+        font-size: 1rem; /* Mniejsza czcionka na smartfonach */
+    }
+}
